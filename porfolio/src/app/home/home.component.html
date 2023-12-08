@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+
+<app-link-bar [linksData]="linksData" class="flex justify-end"></app-link-bar>
+
+<div class="w-full min-h-[91vh] py-6 flex justify-start items-center w400:mt-1">
+    <div class="">
+        <div
+            class="relative w-[40vw] min-h-[240px] h-[480px] ml-[16.6vw] bg-[#5C8374] bg-opacity-[45%] rounded-tl-[30px] rounded-br-[30px] shadow-xl z-10 w950:w-[60vw] w950:border-dashed w950:border-[2px] w950:border-[#65cec2] w400:w-[75vw]">
+            <div class="p-8 w560:p-6 w-full">
+                <h1 class="text-[36px] w560:text-[30px] font-medium text-white text-start leading-[1.0]">Yusuf is a <span
+                        class="importent-text bg-[#465f5ca1] w560:bg-transparent">web designer</span> and <span class="importent-text bg-[#465f5ca1] w560:bg-transparent">full-stack</span>
+                    developer</h1>
+
+                <h4 class="text-[1rem] font-[400] my-8 leading-[1.1] text-white">He crafts responsive websites where technologies meet creatitvity</h4>
+
+                <a href="portfolio#contact"><button class="button">contact me</button></a>
+            </div>
+            <div
+                class="absolute w-[40vw] min-h-[220px] h-[440px] ml-[30vw] mt-[-200px] min-w-[300px] w990:mt-[-180px] w950:hidden bg-[#5C8374] bg-opacity-[5%] rounded-tl-[30px] rounded-br-[30px] border-dashed border-[2px] border-[#20645C]">
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-about></app-about>
+
+<app-skills [skillsData]="skillsData" [otherskillsData]="otherSkillsData"></app-skills>
+
+<app-contact [contactData]="contactData"></app-contact>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    min-height: 270vh;
+    background: linear-gradient(140deg, rgba(4, 13, 18, 1) 1%, rgba(19, 49, 51, 1) 50%, rgba(4, 13, 18, 1) 100%);
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+}
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-link {
+    @apply text-lg font-bold text-center hover:border-b-2 hover:pb-1 border-cyan-900 duration-[10] transition-all 
+}
+
+.nav-link-color {
+    @apply text-cyan-900 font-bold
+}
+
+.importent-text {
+    @apply text-[#37C2B2] font-bold drop-shadow-xl
+
+}
+.importent-text2 {
+    @apply text-[#37C2B2] font-medium
+}
+
+.button {
+    @apply w-32 h-12 bg-[#040D12] bg-opacity-30 border-dashed border-[1px] border-[#65cec2] text-white text-base hover:border-[2px] mt-5
+}
+
+.bgInfo {
+    background: rgb(4, 13, 18);
+    background: linear-gradient(90deg, rgba(4, 13, 18, 1) 23%, rgba(7, 46, 45, 1) 48%, rgba(9, 64, 59, 0.5) 69%, rgba(4, 13, 18, 0) 100%);
+}
+
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(4, 13, 18, 1) 1%, rgba(19, 49, 51, 1) 50%, rgba(4, 13, 18, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    border-radius: 40px
+}

@@ -1,0 +1,10 @@
+<div class="w-full min-h-[150px] flex flex-col gap-5 mt-6 justify-center items-start" id="contact">
+    <app-headtext header="Contact"></app-headtext>
+
+    <div class="">
+        <div *ngFor="let contact of contactData" class="w950:w-[60vw] shadow-2xl w400:w-[75vw] w560:p-4 w-[650px] p-6 ml-[16.6vw] bg-white bg-opacity-[0.15] rounded-tl-[20px] border-solid border-[2px] border-opacity-50 border-[#5C8374] z-20">
+            <h1 class="text-lg text-white font-light">for <span class="importent-text">Job</span>: <span class="cursor-pointer" href="mailto:ygungoruryusuf@gmail.com">{{contact.email}}</span></h1>            
+        </div>
+    </div>
+
+</div>

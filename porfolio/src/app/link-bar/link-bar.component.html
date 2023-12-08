@@ -1,0 +1,7 @@
+<div class="w-fit h-full absolute flex justify-end z-[90]">
+    <div class="sticky flex flex-col justify-start items-center gap-y-3 w400:gap-2 top-20 w-16 h-fit w400:mt-1 mt-[92px] bg-[#040D12] p-3 rounded-bl-[15px] rounded-tl-[15px] border-solid border-y-[2px] border-l-[2px] border-opacity-50 border-[#5C8374] shadow-md">
+        <div *ngFor="let link of linksData">
+            <a class="" href="{{link.toLink == '' ?  '#' : link.toLink}}" title="{{link.toLink == '' ? link.desc : ''}}" target="{{link.toLink == '' ? link.toLink : '_blank'}}"><img class="w-[36px] w400:w-[27px] text-white" src="{{link.logo}}" alt="{{link.linkName}}" *ngIf="link.isActive"></a>
+        </div>
+    </div>
+</div>

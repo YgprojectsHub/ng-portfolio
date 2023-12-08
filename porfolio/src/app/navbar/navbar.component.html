@@ -1,0 +1,23 @@
+<nav class="z-[100] flex justify-around items-center w-full min-h-[9vh] py-2 bg-white rounded-b-x" [ngClass]="{'rounded-none': isResp()}" id="home">
+    <div class=""><img class="w-16 rounded-full border-[3px] border-gray-900" src="../assets/images/portfolio-pp.jpeg" alt="pp"></div>
+  
+    <div
+      class="md:static z-50 absolute bg-white mt-2 md:min-h-fit min-h-[60vh] md:w-auto left-0 top-[-100%] w-full flex items-center px-5" [ngClass]="{'top-[2.5%]': isResp()}">
+      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+        <li>
+          <a href="portfolio#home" class="nav-link"><span class="nav-link-color">#</span>Home</a>
+        </li>
+        <li>
+          <a href="portfolio#about" class="nav-link"><span class="nav-link-color">#</span>About</a>
+        </li>
+        <li>
+          <a href="portfolio#skills" class="nav-link"><span class="nav-link-color">#</span>Skills</a>
+        </li>
+        <li>
+          <a href="portfolio#contact" class="nav-link"><span class="nav-link-color">#</span>Contact</a>
+        </li>
+      </ul>
+    </div>
+  
+    <button (click)="changeState()" class="md:hidden"><i class="fa-solid fa-bars text-3xl cursor-pointer"></i></button>
+</nav>
